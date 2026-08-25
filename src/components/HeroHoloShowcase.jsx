@@ -115,19 +115,21 @@ export default function HeroHoloShowcase() {
           className="relative w-full flex flex-col items-center justify-end"
         >
           {/* Portrait Container */}
-          <div className="relative w-full max-w-[330px] sm:max-w-[370px] max-h-[440px] sm:max-h-[480px] flex flex-col items-center justify-end">
+          <div className="relative w-full max-w-[320px] sm:max-w-[350px] flex flex-col items-center justify-end">
             
-            {/* The Portrait Image with smooth feathering */}
-            <div className="relative w-full flex items-end justify-center">
+            {/* The Portrait Image with clean rounded card framing & smooth feathering */}
+            <div className="relative w-full rounded-3xl overflow-hidden border border-white/15 bg-[#070A10]/60 backdrop-blur-md shadow-[0_20px_60px_rgba(0,0,0,0.8)] group">
               <img
                 src="/hero-image.png"
                 alt="Madhusudhan N — Full Stack Developer & Business Analyst"
-                className="w-full h-auto max-h-[440px] sm:max-h-[480px] object-contain drop-shadow-[0_16px_56px_rgba(59,130,246,0.45)] pointer-events-none z-10"
+                className="w-full h-auto max-h-[420px] sm:max-h-[460px] object-cover object-top pointer-events-none z-10"
                 loading="eager"
-                style={{
-                  maskImage: 'linear-gradient(to bottom, black 75%, transparent 100%)',
-                  WebkitMaskImage: 'linear-gradient(to bottom, black 75%, transparent 100%)',
-                }}
+              />
+
+              {/* Subtle bottom gradient to blend into card floor */}
+              <div
+                className="absolute inset-0 bg-gradient-to-t from-[#070A10] via-transparent to-transparent opacity-60 pointer-events-none z-12"
+                aria-hidden="true"
               />
 
               {/* Holographic Cyan Shimmer Beam Sweep */}
@@ -139,33 +141,33 @@ export default function HeroHoloShowcase() {
               />
 
               {/* Corner HUD Bracket Indicators */}
-              <div className="absolute top-2 left-2 w-3.5 h-3.5 border-t-2 border-l-2 border-cyan-400/40 pointer-events-none z-20" />
-              <div className="absolute top-2 right-2 w-3.5 h-3.5 border-t-2 border-r-2 border-cyan-400/40 pointer-events-none z-20" />
+              <div className="absolute top-3 left-3 w-3.5 h-3.5 border-t-2 border-l-2 border-cyan-400/50 pointer-events-none z-20" />
+              <div className="absolute top-3 right-3 w-3.5 h-3.5 border-t-2 border-r-2 border-cyan-400/50 pointer-events-none z-20" />
             </div>
 
             {/* ── 3. High-Gloss Obsidian Mirror Reflection Floor Effect ── */}
-            <div className="relative w-full h-[120px] sm:h-[150px] -mt-1 overflow-hidden pointer-events-none flex justify-center">
+            <div className="relative w-full h-[90px] sm:h-[110px] -mt-2 overflow-hidden pointer-events-none flex justify-center">
               {/* Reflected Mirror Image (Inverted & Filtered) */}
               <div
-                className="w-full max-h-[440px] sm:max-h-[480px] flex items-start justify-center origin-top select-none"
+                className="w-full rounded-3xl overflow-hidden flex items-start justify-center origin-top select-none"
                 style={{
                   transform: 'scaleY(-1)',
-                  opacity: 0.42,
-                  filter: 'blur(2px) contrast(115%) brightness(1.1)',
-                  maskImage: 'linear-gradient(to bottom, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.35) 45%, transparent 85%)',
-                  WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.35) 45%, transparent 85%)',
+                  opacity: 0.35,
+                  filter: 'blur(2px) contrast(110%) brightness(0.9)',
+                  maskImage: 'linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, transparent 80%)',
+                  WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, transparent 80%)',
                 }}
               >
                 <img
                   src="/hero-image.png"
                   alt=""
                   aria-hidden="true"
-                  className="w-full h-auto object-contain drop-shadow-[0_0_24px_rgba(6,182,212,0.4)]"
+                  className="w-full h-auto object-cover object-top"
                 />
               </div>
 
               {/* Mirror Floor Specular Horizon Waterline Glow */}
-              <div className="absolute top-0 inset-x-4 h-[2px] bg-gradient-to-r from-transparent via-cyan-400 to-transparent blur-[0.5px] shadow-[0_0_16px_#38bdf8]" />
+              <div className="absolute top-0 inset-x-6 h-[2px] bg-gradient-to-r from-transparent via-cyan-400/80 to-transparent blur-[0.5px] shadow-[0_0_16px_#38bdf8]" />
               
               {/* Floor Perspective Radial Grid Reflection */}
               <div

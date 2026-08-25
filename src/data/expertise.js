@@ -1,0 +1,75 @@
+export const expertise = [
+  {
+    number: '01',
+    title: 'MERN Stack Development',
+    icon: 'layers',
+    description: 'End-to-end full stack development across the MERN ecosystem.',
+    skills: [
+      'React.js', 'Node.js', 'Express.js', 'MongoDB', 'Mongoose',
+      'REST APIs', 'Authentication', 'Role-based authorization',
+      'Responsive interfaces', 'State management', 'API integration',
+    ],
+  },
+  {
+    number: '02',
+    title: 'Frontend Engineering',
+    icon: 'monitor',
+    description: 'Building pixel-perfect, responsive interfaces with modern tooling.',
+    skills: [
+      'React', 'JavaScript', 'HTML5', 'CSS3', 'Tailwind CSS',
+      'Bootstrap', 'Responsive UI', 'Reusable components',
+      'Component architecture', 'Performance optimization', 'Cross-device development',
+    ],
+  },
+  {
+    number: '03',
+    title: 'Business Analysis',
+    icon: 'briefcase',
+    description: 'Translating user problems into structured software requirements.',
+    skills: [
+      'Requirement gathering', 'User discussions', 'Workflow analysis',
+      'Business-to-technical conversion', 'Feature planning',
+      'Role-based workflow design', 'Acceptance testing',
+      'User feedback analysis', 'Process improvement', 'Product support',
+    ],
+  },
+  {
+    number: '04',
+    title: 'DevOps & Deployment',
+    icon: 'server',
+    description: 'Shipping and maintaining applications on real production infrastructure.',
+    skills: [
+      'Docker', 'Docker Compose', 'GitHub Actions', 'CI/CD',
+      'Ubuntu VPS', 'SSH deployment', 'Nginx',
+      'Environment variables', 'Production configuration',
+      'Domain configuration', 'Reverse proxy', 'Production troubleshooting',
+    ],
+  },
+  {
+    number: '05',
+    title: 'Database & Data Maintenance',
+    icon: 'database',
+    description: 'Managing, protecting and maintaining production application data.',
+    skills: [
+      'MongoDB', 'Mongoose', 'SQL', 'Database architecture',
+      'Data separation', 'Scheduled backups', 'Cloud backups',
+      'rclone', 'Backup verification', 'Retention management',
+      'Data recovery planning', 'Production database maintenance',
+    ],
+  },
+  {
+    number: '06',
+    title: 'Cloud, VPS & Infrastructure',
+    icon: 'cloud',
+    description: 'Ubuntu VPS hosting, reverse proxies, and automated cloud data protection.',
+    skills: [
+      'Ubuntu VPS', 'Linux Server Management', 'VPS Application Hosting',
+      'Cloud Backup Storage', 'Docker', 'Docker Compose', 'Nginx',
+      'Reverse Proxy', 'GitHub Actions', 'CI/CD', 'SSH',
+      'Domain Configuration', 'DNS Configuration', 'Environment Configuration',
+      'Production Deployment', 'Production Troubleshooting', 'Application Monitoring',
+      'Server Logs', 'MongoDB Hosting', 'Backup Automation', 'Cron Jobs',
+      'rclone', 'Cloud Backup Synchronization', 'Backup Verification', 'Data Recovery Planning',
+    ],
+  },
+]

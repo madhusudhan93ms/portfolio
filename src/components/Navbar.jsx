@@ -16,13 +16,14 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  // Lock body scroll when mobile menu is open
+  // Lock only vertical scrolling for the mobile menu.
   useEffect(() => {
     if (mobileOpen) {
-      document.body.style.overflow = 'hidden'
+      document.body.style.overflowY = 'hidden'
     } else {
-      document.body.style.overflow = 'unset'
+      document.body.style.overflowY = ''
     }
+    return () => { document.body.style.overflowY = '' }
   }, [mobileOpen])
 
   // Track active section

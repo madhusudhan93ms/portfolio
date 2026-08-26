@@ -17,12 +17,11 @@ export const personal = {
   baImage: '/ba.png',
 }
 
-// Navigation links with direct Skills anchor
+// Keep the primary navigation focused on the visitor story.
 export const navLinks = [
   { label: 'Home', href: '#home' },
   { label: 'Work', href: '#work' },
   { label: 'Process', href: '#process' },
-  { label: 'Skills', href: '#skills' },
   { label: 'About', href: '#about' },
   { label: 'Contact', href: '#contact' },
 ]
